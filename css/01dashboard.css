@@ -1,0 +1,287 @@
+
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    height:100vh;
+    padding:0;
+    margin:0;
+    align-items:center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.dashboard-title{
+    min-height:100px;
+    width:100vw;
+    background-color:white;
+    display:flex;
+    padding-left:50px;
+    font-size:2rem;
+    font-weight: bold;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%; 
+    justify-content: center; 
+    align-items: stretch;
+    margin-top:5%;
+    z-index:1;
+    min-height: auto;
+}
+
+
+
+.row {
+    background-color: #F1F9FF;
+    padding: 3%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    width: 30%;
+    height: 100%;
+    flex: 1 1 30%;
+    max-width: 100%;
+}
+
+.raw-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.total-count{
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.icon{
+    width: auto;
+    height:auto;
+    margin-top: -5%;
+    margin-bottom:4%;
+}
+
+.table-container{
+    width: 85%;
+    min-height: 500px;
+    margin-top:5%;
+    background-color:#F1F9FF;
+    border-radius:10px;
+    padding: 2%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1) ;
+    overflow-y:auto;
+    display: block;
+}
+
+.table-container a:hover {
+    font-weight: bold;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+thead{
+    background-color: #FFFFFF;
+    position: relative;
+    top:0;
+    z-index:1;
+}
+
+th, td{
+    text-align: left;
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    border-top:1px solid #ddd;
+}
+
+th{
+    color: #475156;
+    font-size:large 1.1rem;
+}
+
+tbody tr:hover{
+    background-color: #e0f7fa;
+    cursor: pointer;
+}
+
+/* topic ratings */
+
+h4 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px; /* Increase the top margin to push it down */
+    margin-bottom: -20px; /* Optional: adjust bottom margin as needed */
+}
+
+h3 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 0;
+    margin-top:3%;
+}
+
+/* Container for the rating boxes */
+.ratings-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+    margin: 3%;
+}
+
+/* Rating box styles */
+.rating-box {
+    background-color: #F1F9FF;
+    border-radius: 8px;
+    width: 532px;
+    height: 275px;
+    padding: 20px;
+    box-shadow: 0 2px 6px #0000001a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+    gap: 15px;
+}
+
+/* Rating Bar Styling */
+.rating-bar {
+    background-color: #ffcc00;
+    border-radius: 10px;
+    height: 20px; /* Fixed height */
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align to the left */
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    width: 0%; /* Start with 0 width */
+    min-width: 70px; /* Ensure a minimum width for small ratings */
+    max-width: 100%; /* Ensure the width doesn't exceed 100% */
+}
+
+/* Adjust label position inside the rating bar */
+.rating-bar span.star-label {
+    position: absolute;
+    left: 10px; /* Adjust to move the label inside the box */
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+/* Position the percentage outside the yellow bar (right) */
+.percentage {
+    position: absolute;
+    right: -30px; /* Adjust this value based on the desired gap */
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+}
+
+/* Smooth transition for the width of the rating bars */
+.rating-bar {
+    transition: width 0.5s ease-out;
+}
+
+footer{
+    align-self:stretch;
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        gap: 3%;
+    }
+
+    .row {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px){
+    .dashboard-title {
+        font-size: 1.5rem;
+        padding-left: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .row {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .rating-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashoboard-title {
+        font-size: 1.2rem;
+        padding-left: 10px;
+    }
+
+    .row {
+        padding: 5%;
+    }
+
+    .total-count {
+        font-size: 24px;
+        top:15px;
+        right: 20px;
+    }
+
+    .rating-bar span.star-label,
+    .percentage {
+        font-size: 12px;
+    }
+}

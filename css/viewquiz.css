@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    background-color: #BDD0DD;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 38px;
+    font-weight: bold;
+    color: #333;
+
+}
+
+/* Topic Card */
+.topic-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 280px;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+}
+
+/* Hover effect for better interaction */
+.topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image container for a cleaner look */
+.topic-card .image-container {
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    height: 120px; /* Adjust based on your needs */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Image placeholder styling */
+.topic-card .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Title styling */
+.topic-title {
+    font-size: 24px; /* Adjusted for better scaling */
+    font-weight: bold;
+    color: #2c3e50; /* Dark blue tone */
+    margin-bottom: 8px;
+}
+
+/* Description styling */
+.topic-description {
+    font-size: 16px; /* Adjusted for readability */
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.quiz-container {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    margin-top: 50px;
+}
+
+/* Individual Quiz Item */
+.quiz-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.quiz-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #a71d2a;
+}
+
+/* Answers */
+.answers {
+    margin-top: 15px;
+    padding-left: 20px;
+    line-height: 2;
+}
+
+/* Highlight Correct Answer */
+.correct {
+    font-weight: bold;
+    color: green;
+}
+
+
+.sticky-add-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0b0b33;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+.add-btn {
+    background-color: #0b0b33;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.add-btn:hover {
+    background-color: #1a1a5e;
+}
+
+@media (max-width: 1024px) {
+    .quiz-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .quiz-container {
+        width: 95%;
+    }
+
+    .quiz-item {
+        padding: 15px;
+    }
+
+    .delete-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .sticky-add-btn {
+        width: 90%;
+        padding: 10px;
+        bottom: 15px;
+    }
+
+    .add-btn {
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+}

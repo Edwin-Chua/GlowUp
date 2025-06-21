@@ -1,0 +1,76 @@
+/* General styling for the page */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E6E6E6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the main content */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #F1F9FF;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Title for the User Feedback section */
+h1 {
+    margin-left: 105px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Section for the Feedback table */
+.feedback-section {
+    text-align: center;
+}
+
+/* Subheading for the Feedback section */
+h2 {
+    text-align: left;
+    margin-left: 12px;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table header styling */
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Updated table header background color */
+table th {
+    background-color: #f2f4f5;
+    color: #333;
+}
+
+/* Zebra striping for table rows */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Action button (View Details) styling */
+table a {
+    text-decoration: none;
+    color: #2da5f3;
+    font-weight: bold;
+}
+
+/* Hover effect on the action button */
+table a:hover {
+    color: #092131;
+    text-decoration: underline;
+}

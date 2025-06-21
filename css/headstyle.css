@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset styles for the body */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins globally */
+}
+
+/* Header container styling */
+header {
+    width: 100%;
+    background-color: #365475;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 0; /* Add padding for spacing */
+}
+
+/* Top row for logo */
+.top-row {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+/* Logo image styling */
+.logo img {
+    height: 50px; /* Initial logo size */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    cursor: pointer; /* Makes the logo visually clickable */
+}
+
+.logo img:hover {
+    transform: scale(1.2); /* Enlarge the logo slightly on hover */
+}
+
+/* Divider line styling */
+.divider {
+    width: 90%; /* Align divider width with navigation */
+    height: 1px; /* Match the thinner divider */
+    background-color: #ffffff;
+    margin: 15px 0;
+}
+
+/* Apply Montserrat font to username */
+.username {
+    font-family: 'Poppins', sans-serif;
+    color: #d1cfcf;
+    font-size: 20px;
+    font-weight: bold; /* You can adjust the weight if needed */
+}
+
+/* Navigation bar styling */
+.nav {
+    width: 98%; /* Align navigation bar with divider */
+    display: flex;
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Vertically align nav items with profile icon */
+    margin: 0 auto; /* Center the navigation bar */
+}
+
+/* Individual navigation items styling */
+.nav-item {
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    font-size: 20px; /* Match Figma font size */
+    font-weight: bold;
+    color: #d1cfcf;
+    text-decoration: none;
+    padding: 5px 60px; /* Adjust padding for consistent spacing */
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+    color: #ffffff; /* Change color on hover */
+}
+
+/* Profile icon container styling */
+.profile {
+    margin-left: auto; /* Move profile icon to the far right */
+    display: flex;
+    align-items: center; /* Ensure proper vertical alignment */
+}
+
+.profile img {
+    width: 40px; /* Match profile icon size */
+    height: 40px;
+    border-radius: 50%; /* Make the icon circular */
+    object-fit: cover; /* Ensure the image fits well inside the container */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.profile img:hover {
+    transform: scale(1.1); /* Enlarge the profile icon slightly on hover */
+    color: gray;
+}
+
+/* Pop-up styles */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px #0000004d;
+    position: relative;
+    width: 300px;
+}
+
+.popup-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.popup-box h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.popup-box p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.popup-box button {
+    background: #008CFF;
+    color: white;
+    padding: 10px 90px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.popup-box button:hover {
+    background: #e60000;
+    transform: scale(1.1);
+}
+
+.popup-close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    /* Adjustments for mobile devices */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #2b3d56;
+        padding: 10px 0;
+        border-radius: 5px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-item {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-row {
+        width: 95%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .nav-item {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .profile img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+

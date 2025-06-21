@@ -1,0 +1,104 @@
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thank-you-container {
+    background-color: #092131;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    height: 460px; /* Adjusted height to ensure everything fits */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Adjust spacing between the elements */
+    padding-bottom: 40px;
+}
+
+.thank-you-for {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px; /* Space between title and feedback icon */
+}
+
+.subtract-icon {
+    width: 128px;
+    height: 128px;
+    margin: 20px auto; /* Center the feedback icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks-for-helping {
+    margin: 0;
+    font-size: 20px; /* Font size set to 20px as requested */
+    margin-bottom: 0px;
+}
+
+.thanks-for-helping-container {
+    font-size: 20px; /* Font size set to 20px as requested */
+
+}
+
+.send-fill-parent {
+    width: 100%;
+    position: relative;
+    border-radius: 30px;
+    background-color: #092131;
+    height: 250px; /* Adjusted height for better spacing */
+    overflow: hidden;
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    font-family: Poppins;
+    margin-top: 20px;
+}
+
+.icon-container {
+    margin-top: 0px; /* Adjust space between content and home icon */
+}
+
+.home-icon-container {
+    margin-top: 0px; /* Space for home icon at the bottom */
+    display: flex;
+    justify-content: center;
+}
+
+.home-icon {
+    display: inline-block;
+    width: 120px;  /* Adjusted size for the home icon */
+    height: 120px;
+    cursor: pointer; /* Pointer cursor */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.home-icon img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.home-icon-container a:hover img {
+    transform: scale(1.1); /* Scale the icon on hover */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+

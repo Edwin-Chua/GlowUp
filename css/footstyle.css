@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.footer {
+    background-color: #020408; 
+    color: #fff; 
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    max-width: 1200px;
+    width: 100%;
+}
+
+.footer-left {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 40px; /* Adjust spacing between logo and description */
+    flex: 1;
+}
+
+.footer-logo {
+    display: inline-block; /* Ensures the logo behaves like a link */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.footer-logo img {
+    width: 50px; /* Adjust logo size for consistency */
+    transition: transform 0.3s ease; /* Smooth scale transition on hover */
+}
+
+.footer-logo:hover {
+    transform: scale(1.2); /* Enlarge the logo on hover */
+}
+
+.footer-description {
+    font-family: 'Poppins', sans-serif; /* Updated to Poppins */
+    font-size: 16px; /* Slightly larger font size */
+    line-height: 1.6; /* Increase line spacing for readability */
+    max-width: 950px; /* Adjust the maximum width */
+    margin: 0;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    gap: 10px;
+}
+
+.footer-follow {
+    font-family: 'Poppins', sans-serif; /* Updated to Poppins */
+    margin: 0;
+    font-size: 20px; /* Slightly larger font size for heading */
+    font-weight: bold; /* Emphasize the heading */
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px; /* Adjust gap between social icons */
+}
+
+.footer-socials a img {
+    width: 24px; /* Ensure icon size consistency */
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.footer-socials a img:hover {
+    transform: scale(1.2); /* Keep hover effect for interactivity */
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+    }
+    .footer-left {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-right {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 20px;
+    }
+    .footer-description {
+        font-size: 14px;
+        max-width: 90%;
+    }
+    .footer-follow {
+        font-size: 18px;
+    }
+    .footer-socials a img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 15px;
+    }
+    .footer-description {
+        font-size: 12px;
+    }
+    .footer-follow {
+        font-size: 16px;
+    }
+    .footer-socials a img {
+        width: 20px;
+        height: 20px;
+    }
+}    

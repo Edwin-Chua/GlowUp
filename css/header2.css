@@ -1,0 +1,47 @@
+/* General header styling */
+.icon-back-circle-parent {
+    width: 100%;
+    position: relative;
+    background-color: #124261;
+    height: 110px;
+    overflow: hidden;
+}
+
+/* Back icon (left side) */
+.icon-back-circle {
+    position: absolute;
+    top: 27%;
+    left: 64px;
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
+    cursor: pointer; /* Add pointer cursor */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.icon-back-circle:hover {
+    transform: scale(1.1); /* Enlarge slightly on hover */
+}
+
+/* Home icon (right side) */
+.frame-child {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 64px;
+    top: 50%; /* Center vertically within the header */
+    transform: translateY(-50%); /* Prevent movement on hover */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.frame-child:hover {
+    transform: translateY(-50%) scale(1.2); /* Enlarge slightly on hover without shifting */
+    background-color: #16283D; /* Change background color on hover */
+}
+
